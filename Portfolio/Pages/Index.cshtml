@@ -1,0 +1,334 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="hero" id="top">
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <div class="container position-relative">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <p class="hero-greeting">Hi, my name is</p>
+                <h1 class="hero-name">Alex Carter.<br /><span class="grad">I build things for the web.</span></h1>
+                <p class="hero-tagline">
+                    Full-stack developer focused on <strong>C# / .NET</strong> and modern JavaScript.
+                    I turn ideas into fast, reliable, maintainable web applications.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-accent btn-lg px-4" href="/#projects">View my work</a>
+                    <a class="btn btn-ghost btn-lg px-4" href="/#contact">Get in touch</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <div class="stat-value">4+</div>
+                        <div class="stat-label">Years experience</div>
+                    </div>
+                    <div>
+                        <div class="stat-value">15+</div>
+                        <div class="stat-label">Projects shipped</div>
+                    </div>
+                    <div>
+                        <div class="stat-value">3</div>
+                        <div class="stat-label">Open-source repos</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 d-none d-lg-flex justify-content-center">
+                <div class="about-avatar">AC</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="section section-alt" id="about">
+    <div class="container">
+        <p class="section-label">01 · About</p>
+        <h2 class="section-title">A bit about me</h2>
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-8">
+                <p class="section-lead mb-3">
+                    I'm a developer based in Portland, OR, currently building e-commerce backends with
+                    ASP.NET Core and Entity Framework. I enjoy the whole lifecycle: domain modeling,
+                    clean APIs, and interfaces that feel effortless.
+                </p>
+                <p class="section-lead">
+                    Outside of work I contribute to open source, write about .NET performance, and
+                    tinker with home-lab projects. Currently learning Rust.
+                </p>
+                <ul class="about-points">
+                    <li>Full-stack development with C#, ASP.NET Core &amp; React</li>
+                    <li>REST API design, authentication &amp; clean architecture</li>
+                    <li>SQL Server, EF Core, performance tuning and testing</li>
+                    <li>CI/CD with GitHub Actions and Azure App Service</li>
+                </ul>
+            </div>
+            <div class="col-lg-4 d-flex justify-content-center">
+                <div class="about-avatar">AC</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="skills">
+    <div class="container">
+        <p class="section-label">02 · Skills</p>
+        <h2 class="section-title">What I work with</h2>
+        <p class="section-lead mb-4">Technologies I use day-to-day, grouped by layer.</p>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-xl-3">
+                <div class="skill-card">
+                    <h3>🧠 Languages</h3>
+                    <ul class="skill-tags">
+                        <li>C#</li><li>JavaScript</li><li>TypeScript</li><li>SQL</li><li>HTML/CSS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="skill-card">
+                    <h3>⚙️ Backend &amp; Data</h3>
+                    <ul class="skill-tags">
+                        <li>ASP.NET Core</li><li>Entity Framework Core</li><li>SQL Server</li><li>REST APIs</li><li>JWT auth</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="skill-card">
+                    <h3>🎨 Frontend</h3>
+                    <ul class="skill-tags">
+                        <li>React</li><li>Razor Pages</li><li>Bootstrap</li><li>Vite</li><li>Accessibility</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="skill-card">
+                    <h3>🚀 Tools &amp; Cloud</h3>
+                    <ul class="skill-tags">
+                        <li>Git</li><li>Docker</li><li>GitHub Actions</li><li>Azure</li><li>Swagger</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-alt" id="projects">
+    <div class="container">
+        <p class="section-label">03 · Projects</p>
+        <h2 class="section-title">Featured work</h2>
+        <p class="section-lead mb-4">
+            A few things I've built recently. Swap these placeholders for your real repos.
+        </p>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <article class="project-card">
+                    <div class="project-banner"></div>
+                    <div class="project-body">
+                        <p class="project-meta">ASP.NET Core · EF Core · SQL Server</p>
+                        <h3>MobileStore</h3>
+                        <p>
+                            E-commerce backend for a mobile phone store: product catalog, JWT auth,
+                            role-based access, and a clean architecture API with Swagger docs.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/your-username/mobilestore" target="_blank" rel="noopener">Source ↗</a>
+                            <a href="#" aria-disabled="true">Live demo (soon)</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="project-card">
+                    <div class="project-banner"></div>
+                    <div class="project-body">
+                        <p class="project-meta">React · Vite · Chart.js</p>
+                        <h3>Expense Insights</h3>
+                        <p>
+                            Personal finance dashboard that categorizes spending, tracks monthly
+                            budgets, and visualizes trends with interactive charts.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/your-username/expense-insights" target="_blank" rel="noopener">Source ↗</a>
+                            <a href="https://your-demo.example.com" target="_blank" rel="noopener">Live demo ↗</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="project-card">
+                    <div class="project-banner"></div>
+                    <div class="project-body">
+                        <p class="project-meta">.NET · Worker Service · Hangfire</p>
+                        <h3>Invoice Bot</h3>
+                        <p>
+                            Background worker that generates PDF invoices, emails them on schedule,
+                            and retries failures with exponential backoff.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/your-username/invoice-bot" target="_blank" rel="noopener">Source ↗</a>
+                            <a href="#" aria-disabled="true">Case study (soon)</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+          <div class="col-md-6">
+                <article class="project-card">
+                    <div class="project-banner"></div>
+                    <div class="project-body">
+                        <p class="project-meta">C# · Avalonia</p>
+                        <h3>Pixel Editor</h3>
+                        <p>
+                            Small pixel-art editor with layers, palette management and undo/redo,
+                            built as a desktop learning project.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/your-username/pixel-editor" target="_blank" rel="noopener">Source ↗</a>
+                            <a href="#" aria-disabled="true">Download (soon)</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="resume">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <p class="section-label">04 · Experience</p>
+                <h2 class="section-title">Where I've worked</h2>
+
+                <ul class="timeline mt-4">
+                    <li class="timeline-item">
+                        <span class="timeline-role">Senior Backend Developer</span>
+                        <span class="timeline-org">TechCorp · Portland, OR</span>
+                        <span class="timeline-date">2023 — Present</span>
+                        <p class="timeline-desc">
+                            Lead API development for a B2B e-commerce platform serving 200k+ users.
+                            Cut p95 latency 40% and introduced integration testing across services.
+                        </p>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="timeline-role">Full-stack Developer</span>
+                        <span class="timeline-org">DataWave · Remote</span>
+                        <span class="timeline-date">2021 — 2023</span>
+                        <p class="timeline-desc">
+                            Built customer portal features in React and .NET, delivered CI/CD with
+                            GitHub Actions, and mentored two junior developers.
+                        </p>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="timeline-role">Junior Developer</span>
+                        <span class="timeline-org">BrightApps · Portland, OR</span>
+                        <span class="timeline-date">2020 — 2021</span>
+                        <p class="timeline-desc">
+                            Shipped internal tools with ASP.NET Core MVC and SQL Server; automated
+                            reporting that saved the ops team ~10 hours a week.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-5">
+                <p class="section-label">05 · Education</p>
+                <h2 class="section-title">Study &amp; certs</h2>
+
+                <ul class="timeline mt-4">
+                    <li class="timeline-item">
+                        <span class="timeline-role">B.S. Computer Science</span>
+                        <span class="timeline-org">Portland State University</span>
+                        <span class="timeline-date">2016 — 2020</span>
+                        <p class="timeline-desc">Focus on distributed systems and databases.</p>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="timeline-role">Microsoft Certified: Azure Developer Associate (AZ-204)</span>
+                        <span class="timeline-org">Microsoft</span>
+                        <span class="timeline-date">2024</span>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="timeline-role">EF Core &amp; Performance Deep Dive</span>
+                        <span class="timeline-org">Self-directed</span>
+                        <span class="timeline-date">2023</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <a class="btn btn-ghost" href="~/files/Alex_Carter_Resume.pdf" download>
+                ⬇ Download full résumé (PDF)
+            </a>
+            <p class="text-secondary small mt-2 mb-0">Drop your PDF at <code>wwwroot/files/Alex_Carter_Resume.pdf</code>.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section section-alt" id="contact">
+    <div class="container">
+        <p class="section-label">06 · Contact</p>
+        <h2 class="section-title">Let's work together</h2>
+        <p class="section-lead mb-4">
+            Have a project in mind or just want to say hi? My inbox is always open.
+        </p>
+
+        <div class="row g-5">
+            <div class="col-lg-5">
+                <div class="contact-aside">
+                    <h3 class="h5">Prefer email?</h3>
+                    <p>
+                        Reach me directly at
+                        <a href="mailto:alex.carter@example.com">alex.carter@example.com</a>
+                        or find me on
+                        <a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener">LinkedIn</a>.
+                    </p>
+                    <p class="mb-0">Based in Portland, OR — open to remote roles worldwide.</p>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="contact-card">
+                    @if (Model.FormSubmitted)
+                    {
+                        <div class="alert-success-custom" role="status">
+                            ✅ Thanks, @Model.SubmittedName! Your message has been sent — I'll get back to you soon.
+                        </div>
+                    }
+
+                    <form method="post" asp-page-handler="Contact">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label asp-for="Form.Name" class="form-label">Name</label>
+                                <input asp-for="Form.Name" class="form-control" placeholder="Jane Doe" />
+                                <span asp-validation-for="Form.Name" class="text-danger small"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="Form.Email" class="form-label">Email</label>
+                                <input asp-for="Form.Email" class="form-control" placeholder="jane@example.com" />
+                                <span asp-validation-for="Form.Email" class="text-danger small"></span>
+                            </div>
+                            <div class="col-12">
+                                <label asp-for="Form.Subject" class="form-label">Subject</label>
+                                <input asp-for="Form.Subject" class="form-control" placeholder="Project inquiry" />
+                                <span asp-validation-for="Form.Subject" class="text-danger small"></span>
+                            </div>
+                            <div class="col-12">
+                                <label asp-for="Form.Message" class="form-label">Message</label>
+                                <textarea asp-for="Form.Message" class="form-control" rows="5" placeholder="Tell me about your project..."></textarea>
+                                <span asp-validation-for="Form.Message" class="text-danger small"></span>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-accent mt-4 px-4">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

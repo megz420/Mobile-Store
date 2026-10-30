@@ -1,0 +1,17 @@
+# Build output
+**/bin/
+**/obj/
+
+# IDE and user-specific files
+.vs/
+*.user
+*.suo
+
+# Local tooling metadata
+.freebuff/
+
+# Local environment and logs
+.env
+.env.*
+*.log
+TestResults/

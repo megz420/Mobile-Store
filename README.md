@@ -130,7 +130,7 @@ User authentication endpoints:
 - `POST /api/User/register`
 - `POST /api/User/login`
 
-Use the Swagger UI to inspect the available operations and request/response schemas. Authenticated endpoints accept JWT bearer tokens through the `Authorization: Bearer <token>` header.
+Use the Swagger UI to inspect the available operations and request/response schemas. For protected operations, use Swagger's **Authorize** control to provide a valid JWT bearer token.
 
 ## Configuration reference
 
